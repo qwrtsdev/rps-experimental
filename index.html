@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q's Rock, Paper, Scissor</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissor</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="head-container">
-            <p class="head header">Rock, Paper, Scissor</p>
-            <p class="head subheader">─ by qwrts</p>
+      <div class="head-container">
+        <p class="head header">Rock, Paper, Scissor</p>
+        <p class="head subheader">─ by newbs</p>
+      </div>
+      <div class="button-container">
+        <div class="rps-wrapper">
+          <button onclick="playRPS('rock');">
+            <i class="fa-regular fa-hand-back-fist"></i> Rock
+          </button>
+          <button onclick="playRPS('paper');">
+            <i class="fa-regular fa-hand"></i> Paper
+          </button>
+          <button onclick="playRPS('scissor');">
+            <i class="fa-regular fa-hand-scissors"></i> Scissor
+          </button>
         </div>
-        <div class="button-container">
-            <div class="rps-wrapper">
-                <button onclick="playRPS('rock');"><i class="fa-regular fa-hand-back-fist"></i> Rock</button>
-                <button onclick="playRPS('paper');"><i class="fa-regular fa-hand"></i> Paper</button>
-                <button onclick="playRPS('scissor');"><i class="fa-regular fa-hand-scissors"></i> Scissor</button>
-            </div>
-            <button class="bttn-reset" onclick="
+        <button
+          class="bttn-reset"
+          onclick="
                 scores.win = 0;
                 scores.lose = 0;
                 scores.tie = 0;
                 localStorage.removeItem('scores');
                 loadScores();
-            "><i class="fa-solid fa-power-off"></i> Reset</button>
-        </div>
-        <p class="scores-info">wins: 0 / loses: 0 / ties: 0</p>
-        <div class="contacts">
-            <a href="https://github.com/sillyq" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.youtube.com/channel/UCu5jW9y_Dha_cvJ3nYyUkoQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
-        </div>
+            "
+        >
+          <i class="fa-solid fa-power-off"></i> Reset
+        </button>
+      </div>
+      <p class="scores-info">wins: 0 / loses: 0 / ties: 0</p>
+      <div class="contacts">
+        <a href="https://github.com/sillyq" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCu5jW9y_Dha_cvJ3nYyUkoQ"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

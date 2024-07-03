@@ -1,103 +1,103 @@
 body {
-    background-color: rgb(25, 25, 25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0 auto;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* This will center the container horizontally */
-    max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* This will center the container horizontally */
+  max-width: 800px;
 }
 
 .head-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .head {
-    font-family: "Space Mono", monospace;
-    margin: 0;
+  font-family: "Space Mono", monospace;
+  margin: 0;
 }
 .header {
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 40px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 40px;
 }
 .subheader {
-    color: rgb(207, 207, 207);
+  color: rgb(207, 207, 207);
 }
 
 button {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 .rps-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* evenly space the buttons */
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* evenly space the buttons */
+  width: 100%;
 }
 .rps-wrapper button {
-    width: 97px;
-    border-radius: 6px;
+  width: 97px;
+  border-radius: 6px;
 
-    transition: outline 0.15s;
+  transition: outline 0.15s;
 }
 .rps-wrapper button:hover {
-    outline: 1px solid #ffffff;
-    outline-offset: 1px;
+  outline: 1px solid #ffffff;
+  outline-offset: 1px;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 .button-container button {
-    padding: 8px 15px;
+  padding: 8px 15px;
 }
 .bttn-reset {
-    background-color: rgb(255, 94, 94);
-    color: whitesmoke;
-    margin-top: 5px;
-    margin-bottom: 12px;
-    padding: 8px;
-    border-radius: 6px;
+  background-color: rgb(255, 94, 94);
+  color: whitesmoke;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 6px;
 
-    transition: outline 0.15s;
-                /* outline-offset 0.1s; */
+  transition: outline 0.15s;
+  /* outline-offset 0.1s; */
 }
 .bttn-reset:hover {
-    outline: 1px solid #ffffff;
-    outline-offset: 1px;
+  outline: 1px solid #ffffff;
+  outline-offset: 1px;
 }
 
 .scores-info {
-    color: whitesmoke;
-    margin: 0;
+  color: whitesmoke;
+  margin: 0;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
 }
 .contacts a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-    margin-right: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  margin-right: 10px;
 }
-.contacts a:last-child  {
-    margin-right: -10px;
+.contacts a:last-child {
+  margin-right: -10px;
 }
